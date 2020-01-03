@@ -1,0 +1,36 @@
+Exception 29: StoreProhibited: A store referenced a page mapped with an attribute that does not permit stores
+PC: 0x4000e1c3
+EXCVADDR: 0x00000018
+
+Decoding stack results
+0x40100908: malloc(size_t) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\umm_malloc\umm_malloc.cpp line 511
+0x40100b6e: calloc(size_t, size_t) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\umm_malloc\umm_malloc.cpp line 826
+0x40100b60: calloc(size_t, size_t) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\umm_malloc\umm_malloc.cpp line 820
+0x4020318b: loop_task(ETSEvent*) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 188
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x402109ff: tcp_output at core/tcp_out.c line 1259
+0x4020216a: ClientContext::wait_until_sent(int) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\libraries\ESP8266WiFi\src/include/ClientContext.h line 331
+0x40100908: malloc(size_t) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\umm_malloc\umm_malloc.cpp line 511
+0x402151c0: mem_malloc at core/mem.c line 210
+0x4020f104: pbuf_alloc_LWIP2 at core/pbuf.c line 284
+0x40214732: ip4_output_if at core/ipv4/ip4.c line 1550
+0x4020fe90: tcp_write at core/tcp_out.c line 263
+0x402031dc: __esp_yield() at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 100
+0x4020378e: __delay(unsigned long) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_wiring.cpp line 54
+0x4020230f: ClientContext::_write_from_source(DataSource*) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\libraries\ESP8266WiFi\src/include/ClientContext.h line 464
+0x4020239d: WiFiClient::write(unsigned char const*, unsigned int) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\libraries\ESP8266WiFi\src/include/ClientContext.h line 364
+0x40204c30: WiFiClient::write(unsigned char) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\libraries\ESP8266WiFi\src\WiFiClient.cpp line 217
+0x40201bc4: DataSource::~DataSource() at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\libraries\ESP8266WiFi\src/include/DataSource.h line 12
+0x402026c9: WiFiClient::flush(unsigned int) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\libraries\ESP8266WiFi\src\WiFiClient.cpp line 318
+0x40201113: loop() at C:\Users\ptq00\Documents\Arduino\sketch_jan03b/sketch_jan03b.ino line 44
+0x40100154: ets_post(uint8, ETSSignal, ETSParam) at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 160
+0x402032f4: loop_wrapper() at C:\Users\ptq00\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.6.3\cores\esp8266\core_esp8266_main.cpp line 180
